@@ -8,32 +8,21 @@ public class Pasajero {
         this.nombre = nombre;
         this.numeroAsiento = numeroAsiento;
         this.tipoAsiento = tipoAsiento;
-        this.checkin = false;
-
+        checkin = false;
     }
 
-    public String getNombre() {
-        return nombre;
-    }
-
-    public String getTipoAsiento() {
-        return tipoAsiento;
-    }
-
-    public int getNumeroAsiento() {
-        return numeroAsiento;
-    }
-
-    public Boolean getCheckin() {
-        return checkin;
+    public void setCheckin(Boolean checkin) {
+        this.checkin = checkin;
     }
 
     @Override
     public String toString() {
         return "Pasajero" +
-                "Nombre: '" + nombre +
-                ", No. Asiento:" + numeroAsiento +
-                ", Tipo Asiento: '" + tipoAsiento +
-                ", Checkin: " + checkin + "\n";
+                "nombre: " + nombre +
+                ", No. Asiento: " + numeroAsiento +
+                ", Categoria: " + tipoAsiento +
+                ", CheckIn: " + checkin + '\n';
     }
+
 }
+
