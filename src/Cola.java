@@ -78,7 +78,7 @@ public class Cola {
         return -1;
     }
 
-    // --- R3: Cancelar un registro pendiente ---
+    //R3 Cancelar un registro pendiente
     public Pasajero cancelarPorAsiento(int asiento) {
         if (asiento < 1 || asiento > 30) {
             throw new IllegalArgumentException("El asiento debe estar entre 1 y 30.");
